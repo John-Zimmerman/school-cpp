@@ -1,0 +1,83 @@
+// CONDITIONAL STATEMENTS NOTES //
+
+A "conditional statement" or a "conditional", is a logical process where a rule or set of rules is followed by a condition. Simply, if said rule is met then a set condition happens. A simple representation of this in the real world could be shown like this:
+
+    Example:
+        "If I do my homework, I get my allowance." If doing my homework represents the rule, the condition is getting my allowance.
+
+The "If" statememt is a conditional that represents the example above. Getting your allowance or not is reliant on IF you do your homework. Lets write some psuedo-code that represents this condtional statement.
+
+
+    IF
+homework is done,
+    Then    
+recieve allowance.
+    END
+
+
+ Lets add another condition. Again, do your homework, get allowance. Else, you get grounded. This is a slightly more complex condtional statement called the Else statement. This could be shown like this.
+
+
+    IF
+homework is done,
+    THEN 
+recieve allowance.
+    ELSE
+get grounded.
+    END
+         
+Lets make the conditional statement significantly more complex using our homework example. Let's say: If you do your homework and get above a 90%, you get your allowance. If you get less than 90% but more than 70%, you get nothing. If you score less than 70%, you get grounded. This would be represented with the "Else If" conditional statement.
+
+
+    IF
+homework score => 90%
+    THEN
+recieve allowance.
+    ELSE IF
+homework score < 90% > 70%
+    THEN
+get nothing.
+    ELSE
+get grounded.
+
+// SUMMARY //
+
+C++ has the following conditional statements:
+    - Use IF to specify a block of code to be executed, if a specified condition is true.
+    - Use ELSE to specify a block of code to be executed, if the same condition is false.
+    - Use ELSE IF to specify a new condition to test, if the first condition is false.
+
+C++ Specific examples using standard IO.
+
+// IF // 
+
+
+if (20 > 18){
+    std::cout << "20 is greater than 18" << std::endl;
+}
+
+(Outputs: 20 is greater than 18)
+
+
+< ELSE >
+
+
+int time = 20;
+if (time < 18){
+    std::cout << "Good day." << std::endl;
+} else {
+    std::cout << "Good evening." << std::endl;
+}
+
+
+< ELSE IF >
+
+int time = 22;
+if (time < 10){
+    std::cout << "Good Morning." << std::endl;
+} else if (time < 20 ) {
+    std::cout << "Good Day." << std::cout;
+} else {
+    std::cout << "Good Evening." << std::cout;
+}
+    
