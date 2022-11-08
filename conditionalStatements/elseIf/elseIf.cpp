@@ -8,12 +8,12 @@ int main(){
 
     if (i < n) {
         std:cout << "false" << std::endl;
-    }
-    else if (i == n) {
+    } else if (i == n) {
         std::cout << "false" << std::endl;
-    }
-    else {
+    } else if (i > n) {
         std::cout << "true" << std::endl;
+    } else {
+        std::cout << "error" << std::endl;
     }
     return 0;
 }
